@@ -15,3 +15,11 @@ defmodule Geometry do
         |> abs()
     end
 end
+
+defmodule Arities do
+    # use of default values
+    # note that this generates three different functions with the same name
+    def multipleFunctions(a, b \\ 1, c \\ 2) do
+        a + b + c
+    end
+end
